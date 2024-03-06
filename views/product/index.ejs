@@ -1,0 +1,24 @@
+<%- include('./partials/header') %>
+<%- include('./partials/navbar') %>
+
+<div class="container my-5">
+    <div class="row">
+        <% for(let item of allProducts){ %>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 border-0 shadow-sm product-card">
+                    <img src="<%= item.img %>" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate"><%= item.name %></h5>
+                        <p class="card-text text-muted"><%= item.desc.substring(0, 100) %>...</p>
+                        <p class="card-text font-weight-bold">Rs: <%= item.price %></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <a href="/products/<%= item._id %>" class="btn btn-light btn-sm btn-block stretched-link">View Product</a>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>
+
+<%- include('./partials/footer') %>

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin-left: 30%;
+            padding: 0;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        h2 a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #44e9a4;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #289c6c;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register" method="POST">
+        <h1>Sign Up</h1>
+        <div>
+            <label class="form-label" for="name">
+                Email:
+            </label>
+            <input class="form-control" type="email" name="email" id="name" placeholder="Email ID">
+        </div>
+        <div>
+            <label class="form-label" for="username">
+                Username:
+            </label>
+            <input class="form-control" type="text" name="username" id="username" placeholder="username">     
+        </div>
+        <div>
+            <label class="form-label" for="password">
+                Password:
+            </label>
+            <input class="form-control" type="password" name="password" id="password" placeholder="password">
+        </div>
+        
+        
+        <div>
+            <label class="form-label" for="age">
+                Age:
+            </label>
+            <input class="form-control" type="age" name="age" id="age" placeholder="age">
+        </div>
+        <div>
+            <label class="form-label" for="name">
+                gender:
+            </label>
+            <input class="form-control" type="text" name="gender" id="gender" placeholder="gender">
+        </div>
+
+        <button type="submit" class="bt btn-sm btn-success">Submit</button>
+    </form>
+</body>
+</html>
